@@ -2,7 +2,7 @@
 body{background:#ddd;color:#333;font-size:16px}
 .header-index{margin:0;overflow:hidden;}
 .header-index img{width:100%;position:fixed;z-index:-1}
-.body{position:relative;top:200px;}
+.body{position:relative;top:180px;}
 .body .cont-index{background:#ddd;padding:15px;}
 .body .cont-index article{margin:5px}
 .body .cont-index .img{background:#fff;border-radius:1em;box-shadow:0 15px 5px #333;padding:15px;}
@@ -19,6 +19,8 @@ body{background:#ddd;color:#333;font-size:16px}
 .body .cont-index .login .forgot a{color:#ccc;text-decoration:none}
 .body .cont-index .login .pass:before{font-family:'icono';content:'\e60c';text-shadow:1.5px 1.5px 2px #333}
 .body .cont-index .login .user:before{font-family:'icono';content:"\e604";text-shadow:1.5px 1.5px 2px #333}
+.body .down{position:relative;text-align:center;}
+.body .down:before{font-family:'icono';content:'\e658';color:#ddd;font-weight:bold;font-size:2em}
 .body .facebook:before{font-family:'icono';content:'\e613'}
 .body .footer-index{background-color:#111;color:#5c5;font-size:1.5em;height:75px;text-align:center;}
 .body .footer-index a{text-decoration:none}
@@ -40,4 +42,6 @@ body{background:#ddd;color:#333;font-size:16px}
 .body .cont-index div .login .input label{display:inline-block;horizontal-align:center;width:10%}
 .body .cont-index .left{float:left}
 .body .cont-index .right{float:right}
+}@media screen and (min-width:1024px){.body{top:500px;}
+.body .down{font-size:3em}
 }
