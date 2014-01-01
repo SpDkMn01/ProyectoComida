@@ -15,142 +15,189 @@ body
 	font-size: 16px
 
 .header-index
+	margin 0px
+	overflow hidden
 	img
 		width 100%
+		position fixed
+		z-index -1
 
-.cont-index
-	background #ddd
-	margin 15px
-
-	article
-		margin 5px
+.body
 	
-	.img
-		background white
-		border-radius 1em
-		box-shadow 0px 15px 5px #333
+	position relative
+	top 200px
+	.cont-index
+		background #ddd
 		padding 15px
 
-		.fotos
-			text-align center
-			width 100%
-			img
-				border-radius 1em
-				width 49%
+		article
+			margin 5px
+		
+		.img
+			background white
+			border-radius 1em
+			box-shadow 0px 15px 5px #333
+			padding 15px
 
-		.principal
-			img
-				border-radius 1em
+			.fotos
+				text-align center
 				width 100%
-	
-	.login
-		background white
-		border-radius 1em
-		box-shadow 0px 15px 5px #333
-		margin-bottom 35px
-		padding 5px
-	
-		.input
-			text-align center
-			
-			input
-				border 0px
-				color #bbb
+				img
+					border-radius 1em
+					width 49%
+
+			.principal
+				img
+					border-radius 1em
+					width 100%
+		
+		.login
+			background white
+			border-radius 1em
+			box-shadow 0px 15px 5px #333
+			margin-bottom 35px
+			padding 5px
+		
+			.input
+				text-align center
+				
+				input
+					border 0px
+					color #bbb
+					display inline-block
+					margin 5px
+					overflow hidden
+					width 75%
+				
+				label
+					display inline-block
+					horizontal-align center
+					width 10%
+
+			.action
 				display inline-block
-				margin 5px
-				overflow hidden
-				width 75%
-			
-			label
+				text-align right
+				width 40%
+
+				.intro
+					background blue
+					border 0px
+					border-radius 5px
+					color #ccc
+					font-weight:bold
+					font-size 0.8em
+					padding 5px 15px
+
+			.forgot
 				display inline-block
-				horizontal-align center
-				width 10%
+				margin-left 7%
+				text-align left
+				width 50%
 
-		.action
+				a
+					color #ccc
+					text-decoration none
+
+			.pass:before
+				font-family 'icono'
+				content '\e60c'
+				text-shadow 1.5px 1.5px 2px #333
+
+			.user:before
+				font-family 'icono'
+				content "\e604"
+				text-shadow 1.5px 1.5px 2px #333
+
+
+	.facebook:before
+		font-family 'icono'
+		content '\e613'
+
+	.footer-index
+		background-color #111
+		color #5c5
+		font-size 1.5em
+		height 75px
+		text-align center
+
+		a
+			text-decoration none
+		p
 			display inline-block
-			text-align right
-			width 40%
-
-			.intro
-				background blue
-				border 0px
-				border-radius 5px
-				color #ccc
-				font-weight:bold
-				font-size 0.8em
-				padding 5px 15px
-
-		.forgot
-			display inline-block
-			margin-left 7%
-			text-align left
-			width 50%
-
-			a
-				color #ccc
-				text-decoration none
-
-		.pass:before
-			font-family 'icono'
-			content '\e60c'
+			margin-left 0.5em
+			margin-right 0.5em
 			text-shadow 1.5px 1.5px 2px #333
+		
+	.gpp:before
+		font-family 'icono'
+		content '\e616'
 
-		.user:before
-			font-family 'icono'
-			content "\e604"
-			text-shadow 1.5px 1.5px 2px #333
+	.pinteres:before
+		font-family 'icono'
+		content '\e61e'
 
-
-.facebook:before
-	font-family 'icono'
-	content '\e613'
-
-.footer-index
-	background-color #111
-	color #5c5
-	font-size 1.5em
-	height 75px
-	text-align center
-
-	a
-		text-decoration none
-	p
-		display inline-block
-		margin-left 0.5em
-		margin-right 0.5em
-		text-shadow 1.5px 1.5px 2px #333
-	
-.gpp:before
-	font-family 'icono'
-	content '\e616'
-
-.pinteres:before
-	font-family 'icono'
-	content '\e61e'
-
-.twitter:before
-	font-family 'icono'
-	content '\e61d'
+	.twitter:before
+		font-family 'icono'
+		content '\e61d'
 
 @media screen and (min-width:640px)
-	.cont-index
-		margin 0px
-		padding 0px
-		position absolute
-		top 300px
-
-		div
-			display inline-block
+	.body
+		position relative
+		top 350px
+		
+		.cont-index
 			margin 0px
-			padding 0px
-			vertical-align middle
-			width 49%
+			overflow hidden
+			padding 1%
 
-		.img
-			display inline-block
-			margin  0px
+			div
+				display inline-block
+				margin 0px
+				padding 0px
+				vertical-align middle
+				width 47%
 
-		.login
-			display inline-block
-			margin 0px
-			vertical-align 20%
+				.img
+					display inline-block
+					margin  0px
+					width 100%
+
+					.fotos
+						text-align center
+						width 100%
+						img
+							border-radius 1em
+							width 49%
+
+					.principal
+						width 100%
+						img
+							border-radius 1em
+							width 100%
+
+				.login
+					display inline-block
+					margin 40% 0px
+
+					.input
+						text-align center
+						width 100%
+						
+						input
+							border 0px
+							color #bbb
+							display inline-block
+							margin 5px
+							overflow hidden
+							width 75%
+						
+						label
+							display inline-block
+							horizontal-align center
+							width 10%
+
+			.left
+				float left
+
+			.right
+				float right
